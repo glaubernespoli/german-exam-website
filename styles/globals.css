@@ -8,8 +8,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   background-color: #000000;
 }
 
@@ -29,16 +29,11 @@ a {
 @font-face {
   font-family: "AvenirNextW10-Bold";
   src: url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.eot");
-  src: url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.svg#AvenirNextW10-Bold")
-      format("svg");
+  src: url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/e5c490a944bc2b2746f0c851501e46c7.svg#AvenirNextW10-Bold") format("svg");
 }
 
 .Avenir {
@@ -83,12 +78,6 @@ a {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 32px;
-}
-
-@media (min-width: 720px) {
-  .fsac4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .ktq4 {
