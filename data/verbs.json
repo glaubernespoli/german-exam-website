@@ -8,5 +8,25 @@
     "verb": "Achten",
     "preposition": "Auf",
     "case": "A"
+  },
+  {
+    "verb": "Anfangen",
+    "preposition": "Mit",
+    "case": "D"
+  },
+  {
+    "verb": "Ankommen",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "Antworten",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "Sich ärgen",
+    "preposition": "Über",
+    "case": "A"
   }
 ]
