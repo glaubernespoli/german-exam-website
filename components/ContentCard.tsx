@@ -8,7 +8,7 @@ import PrepositionsContainer from "./container/PrepositionsContainer";
 const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
   const address = `/api/verb`;
   const fetcher = async (url: string) => await axios.get(url).then((res) => res.data);
-  const { data: verb, error } = useSWR<Verb>(address, fetcher);
+  const { data: verb, error } = useSWR<Verb>(address, fetcher, { revalidateOnFocus: false });
 
   if (error) <p>Loading failed...</p>;
   if (!verb) <h1>Loading...</h1>;
