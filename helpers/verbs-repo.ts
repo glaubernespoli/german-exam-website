@@ -26,7 +26,7 @@ const verbsRepo = {
       throw new TypeError(`Wrong case. Chosen one: [${xCase.name}], correct one: [${objCase?.name}]`);
     }
 
-    return `Verb [${verb.verb}] has preposition  [${preposition}] and case [${xCase.name}]!`;
+    return `[${verb.verb}] has preposition  [${preposition}] and case [${xCase.name}]!`;
   },
 };
 
