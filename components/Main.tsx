@@ -1,7 +1,7 @@
 import ContentCardProps from "../types/contentCard";
 import ContentCard from "./ContentCard";
 
-const Main = ({ verb }: ContentCardProps) => {
+const Main = ({ verb, prepositions, cases }: ContentCardProps) => {
   return (
     <section className="text-gray-600 body-font">
       <div className="max-w-5xl pb-24 mx-auto pt-52">
@@ -11,7 +11,7 @@ const Main = ({ verb }: ContentCardProps) => {
           <br />
         </h2>
       </div>
-      <ContentCard verb={verb} />
+      <ContentCard verb={verb} prepositions={prepositions} cases={cases} />
     </section>
   );
 };

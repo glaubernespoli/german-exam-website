@@ -89,3 +89,8 @@ a {
 .fkrr1 {
   font-family: "Inter", sans-serif;
 }
+
+input:checked ~ .radio {
+  color: white;
+  background-color: green;
+}

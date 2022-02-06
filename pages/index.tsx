@@ -5,7 +5,7 @@ import Main from "../components/Main";
 import verbsRepo from "../helpers/verbs-repo";
 import ContentCardProps from "../types/contentCard";
 
-export default function Home({ verb }: ContentCardProps) {
+export default function Home({ verb, prepositions, cases }: ContentCardProps) {
   return (
     <div className="text-black bg-black">
       <NextSeo
@@ -20,12 +20,14 @@ export default function Home({ verb }: ContentCardProps) {
         <title>nine4</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Main verb={verb} />
+      <Main verb={verb} prepositions={prepositions} cases={cases} />
     </div>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
   const verb = await verbsRepo.getRandom();
-  return { props: { verb: verb } };
+  const prepositions = await verbsRepo.getPrepositions();
+  const cases = await verbsRepo.getCases();
+  return { props: { verb: verb, prepositions: prepositions, cases: cases } };
 };

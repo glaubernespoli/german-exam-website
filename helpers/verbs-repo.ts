@@ -9,7 +9,7 @@ const typedCases: Case[] = cases;
 
 const verbsRepo = {
   getRandom: async () => typedVerbs.splice(Math.floor(Math.random() * verbs.length), 1)[0],
-  getPrepositions: async () => prepositions,
+  getPrepositions: async () => prepositions.sort(),
   getCases: async () => typedCases,
 };
 

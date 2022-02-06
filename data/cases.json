@@ -1,10 +1,10 @@
 [
   {
-    "name": "Dativ",
-    "symbol": "D"
-  },
-  {
     "name": "Akkusativ",
     "symbol": "A"
+  },
+  {
+    "name": "Dativ",
+    "symbol": "D"
   }
 ]
