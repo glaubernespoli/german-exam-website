@@ -54,8 +54,12 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
       <div className="ktq4">
         <form onSubmit={doSubmit}>
           <h2 className="pt-4 text-6xl font-bold text-center text-white capitalize">{verb?.verb}</h2>
-          <PrepositionsContainer prepositionList={prepositions} setPreposition={setPreposition} />
-          <CasesContainer caseList={cases} setCase={setCase} />
+          <PrepositionsContainer
+            prepositionList={prepositions}
+            preposition={preposition}
+            setPreposition={setPreposition}
+          />
+          <CasesContainer caseList={cases} xCase={xCase} setCase={setCase} />
           {!result && <ButtonsContainer disabled={buttonDisabled} />}
           {result && <ResultContainer result={result} resetHandler={resetHandler} />}
         </form>

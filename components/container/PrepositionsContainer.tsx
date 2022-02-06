@@ -3,10 +3,11 @@ import OptionsContainer from "./OptionsContainer";
 
 type PrepositionsProps = {
   prepositionList: string[];
+  preposition: string | undefined;
   setPreposition: Dispatch<SetStateAction<string | undefined>>;
 };
 
-const PrepositionsContainer = ({ prepositionList, setPreposition }: PrepositionsProps) => {
+const PrepositionsContainer = ({ prepositionList, preposition, setPreposition }: PrepositionsProps) => {
   const handler = (e: ChangeEvent<HTMLInputElement>) => setPreposition(e.target.value);
   return (
     <OptionsContainer
@@ -14,6 +15,7 @@ const PrepositionsContainer = ({ prepositionList, setPreposition }: Prepositions
         return { id: value, text: value };
       })}
       group="prepositions"
+      selected={preposition}
       handler={handler}
     />
   );
