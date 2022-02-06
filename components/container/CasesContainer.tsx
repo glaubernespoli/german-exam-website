@@ -1,4 +1,5 @@
 import Case from "../../types/case";
+import OptionsContainer from "./OptionsContainer";
 
 type CasesProps = {
   cases: Case[];
@@ -6,21 +7,12 @@ type CasesProps = {
 
 const CasesContainer = ({ cases }: CasesProps) => {
   return (
-    <div className="flex items-center justify-center m-10">
-      <div className="bg-gray-900 rounded-lg">
-        {cases.map((cases) => (
-          <div key={cases.name} className="inline-flex rounded-lg">
-            <input type="radio" name="cases" id={cases.symbol} hidden />
-            <label
-              htmlFor={cases.symbol}
-              className="self-center px-4 py-2 text-center text-gray-300 rounded-lg cursor-pointer select-none radio hover:opacity-75"
-            >
-              {cases.name}
-            </label>
-          </div>
-        ))}
-      </div>
-    </div>
+    <OptionsContainer
+      data={cases.map((value) => {
+        return { id: value.symbol, text: value.name };
+      })}
+      group="cases"
+    />
   );
 };
 export default CasesContainer;

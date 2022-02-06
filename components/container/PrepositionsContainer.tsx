@@ -1,24 +1,17 @@
+import OptionsContainer from "./OptionsContainer";
+
 type PrepositionsProps = {
   prepositions: string[];
 };
 
 const PrepositionsContainer = ({ prepositions }: PrepositionsProps) => {
   return (
-    <div className="flex items-center justify-center m-10">
-      <div className="bg-gray-900 rounded-lg">
-        {prepositions.map((preposition) => (
-          <div key={preposition} className="inline-flex rounded-lg">
-            <input type="radio" name="preposition" id={preposition} hidden />
-            <label
-              htmlFor={preposition}
-              className="self-center px-4 py-2 text-center text-gray-300 rounded-lg cursor-pointer select-none radio hover:opacity-75"
-            >
-              {preposition}
-            </label>
-          </div>
-        ))}
-      </div>
-    </div>
+    <OptionsContainer
+      data={prepositions.map((value) => {
+        return { id: value, text: value };
+      })}
+      group="prepositions"
+    />
   );
 };
 export default PrepositionsContainer;
