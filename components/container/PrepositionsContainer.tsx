@@ -11,7 +11,7 @@ const PrepositionsContainer = ({ prepositions }: PrepositionsProps) => {
             <input type="radio" name="preposition" id={preposition} hidden />
             <label
               htmlFor={preposition}
-              className="self-center px-4 py-2 text-center text-gray-300 rounded-lg cursor-pointer radio hover:opacity-75"
+              className="self-center px-4 py-2 text-center text-gray-300 rounded-lg cursor-pointer select-none radio hover:opacity-75"
             >
               {preposition}
             </label>

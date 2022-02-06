@@ -13,7 +13,7 @@ const CasesContainer = ({ cases }: CasesProps) => {
             <input type="radio" name="cases" id={cases.symbol} hidden />
             <label
               htmlFor={cases.symbol}
-              className="self-center px-4 py-2 text-center text-gray-300 rounded-lg cursor-pointer radio hover:opacity-75"
+              className="self-center px-4 py-2 text-center text-gray-300 rounded-lg cursor-pointer select-none radio hover:opacity-75"
             >
               {cases.name}
             </label>
