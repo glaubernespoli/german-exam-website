@@ -12,7 +12,22 @@ const verbsRepo = {
   getPrepositions: async () => prepositions.sort(),
   getCases: async () => typedCases,
   getCaseFrom: async (caseValue: string) => typedCases.find((xCase) => xCase.symbol === caseValue),
-  validateVerb: async (verb: Verb | undefined, preposition: string | undefined, xCase: Case | undefined) => {},
+  validateVerb: async (verb: Verb | undefined, preposition: string | undefined, xCase: Case | undefined) => {
+    if (!verb || !preposition || !xCase) {
+      throw new TypeError("You must select every option.");
+    }
+
+    if (verb.preposition?.toLowerCase() != preposition.toLowerCase()) {
+      throw new TypeError(`Wrong preposition. Chosen one: [${preposition}], correct one: [${verb.preposition}]`);
+    }
+
+    const objCase = typedCases.find((value) => value.symbol === verb.case);
+    if (objCase?.symbol != xCase.symbol) {
+      throw new TypeError(`Wrong case. Chosen one: [${xCase.name}], correct one: [${objCase?.name}]`);
+    }
+
+    return `Verb [${verb.verb}] has preposition  [${preposition}] and case [${xCase.name}]!`;
+  },
 };
 
 export default verbsRepo;
