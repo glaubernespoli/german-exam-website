@@ -20,13 +20,528 @@
     "case": "A"
   },
   {
+    "verb": "Abhalten",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "Sich abmelden",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "Abraten",
+    "preposition": "Von",
+    "case": "D"
+  },
+  {
+    "verb": "Achten",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "die Allergie",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "Ankommen",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "die Alternative",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "Ändern",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "Anfangen",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "sich änstigen",
+    "preposition": "vor",
+    "case": "D"
+  },
+  {
+    "verb": "anpassen",
+    "preposition": "an",
+    "case": "A"
+  },
+  {
+    "verb": "Ankommen",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
     "verb": "Antworten",
     "preposition": "Auf",
     "case": "A"
   },
   {
-    "verb": "Sich ärgen",
-    "preposition": "Über",
+    "verb": "Sich aufregen",
+    "preposition": "über",
     "case": "A"
+  },
+  {
+    "verb": "Ausgehen",
+    "preposition": "Von",
+    "case": "D"
+  },
+  {
+    "verb": "sich auskennen",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "sich austauschen",
+    "preposition": "Mit",
+    "case": "D"
+  },
+  {
+    "verb": "sich bedanken",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "sich befassen",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "befinden",
+    "preposition": "in",
+    "case": "D"
+  },
+  {
+    "verb": "befreien",
+    "preposition": "Von",
+    "case": "D"
+  },
+  {
+    "verb": "sich begeistern",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "beginnen",
+    "preposition": "Mit",
+    "case": "D"
+  },
+  {
+    "verb": "sich beklagen",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "beitragen",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "berichten",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "die Berühmheit",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "sich beschäftigen",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "sich beschwerden",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "bestehen",
+    "preposition": "aus",
+    "case": "D"
+  },
+  {
+    "verb": "sich beteiligen",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "sich bewerben",
+    "preposition": "um",
+    "case": "A"
+  },
+  {
+    "verb": "Bezeichnung",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "beziehen",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "bitten",
+    "preposition": "um",
+    "case": "A"
+  },
+  {
+    "verb": "die eifersucht",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "sich eignen",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "eingehen",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "sich einstellen (predisponerse)",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "die Empörung",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "sich entfernen",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "sich entscheiden",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "sich Entschliessen",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "sich entschuldigen",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "das Entsetzen (espanto)",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "Entäuschung",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "Entwicklung",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "Erfahrung",
+    "preposition": "in",
+    "case": "D"
+  },
+  {
+    "verb": "Der Elfolg",
+    "preposition": "in",
+    "case": "D"
+  },
+  {
+    "verb": "sich erholen",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "sich errinern",
+    "preposition": "an",
+    "case": "A"
+  },
+  {
+    "verb": "sich erkundigen",
+    "preposition": "bei",
+    "case": "D"
+  },
+  {
+    "verb": "das Erstaunen",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "erwarten",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "die Erwartung",
+    "preposition": "an",
+    "case": "A"
+  },
+  {
+    "verb": "die Fähigkeit",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "fragen",
+    "preposition": "nach",
+    "case": "D"
+  },
+  {
+    "verb": "gehören",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "sich gewöhnen",
+    "preposition": "an",
+    "case": "A"
+  },
+  {
+    "verb": "glauben",
+    "preposition": "an",
+    "case": "A"
+  },
+  {
+    "verb": "die Gleichgültigkeit (indiferencia)",
+    "preposition": "gegenüber",
+    "case": "D"
+  },
+  {
+    "verb": "sich halten (ceñirse)",
+    "preposition": "an",
+    "case": "A"
+  },
+  {
+    "verb": "sich halten (estimar)",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "halten",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "die Haltung",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "handeln",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "der Handel (mercado)",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "helfen",
+    "preposition": "bei",
+    "case": "D"
+  },
+  {
+    "verb": "hinweisen",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "hoffen",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "sich informieren",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "sich interessieren",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "das Interesse",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "investieren",
+    "preposition": "in",
+    "case": "A"
+  },
+  {
+    "verb": "klarkommen",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "sich konzentrieren",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "sich kümmern",
+    "preposition": "um",
+    "case": "A"
+  },
+  {
+    "verb": "lachen",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "leiden",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "die Liebe",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "liegen",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "das Misstrauen",
+    "preposition": "gegenüber",
+    "case": "D"
+  },
+  {
+    "verb": "die Neugier",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "Notwendigkeit",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "Nutzen",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "die Offenheit (la franqueza)",
+    "preposition": "gegenüber",
+    "case": "D"
+  },
+  {
+    "verb": "der Nutzen",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "sich orientieren",
+    "preposition": "An",
+    "case": "D"
+  },
+  {
+    "verb": "protestieren",
+    "preposition": "gegen",
+    "case": "A"
+  },
+  {
+    "verb": "passen",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "raten",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "die Reaktion",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "der Reichtum (la riqueza)",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "richten",
+    "preposition": "nach",
+    "case": "D"
+  },
+  {
+    "verb": "der Geschmack",
+    "preposition": "nach",
+    "case": "D"
+  },
+  {
+    "verb": "die Schuld",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "die Sicherheit",
+    "preposition": "Vor",
+    "case": "D"
+  },
+  {
+    "verb": "der Sieg (triunfar sobre)",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "die Skepsis",
+    "preposition": "gegenüber",
+    "case": "D"
+  },
+  {
+    "verb": "sorgen (cuidar)",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "sich sorgen (preocuparse)",
+    "preposition": "um",
+    "case": "A"
+  },
+  {
+    "verb": "sich spezialisieren",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "sterben",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "der Stolz",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "die Suche",
+    "preposition": "nach",
+    "case": "D"
   }
 ]
