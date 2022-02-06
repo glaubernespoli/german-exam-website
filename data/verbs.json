@@ -35,18 +35,8 @@
     "case": "D"
   },
   {
-    "verb": "Achten",
-    "preposition": "Auf",
-    "case": "A"
-  },
-  {
     "verb": "die Allergie",
     "preposition": "auf",
-    "case": "A"
-  },
-  {
-    "verb": "Ankommen",
-    "preposition": "Auf",
     "case": "A"
   },
   {
@@ -60,11 +50,6 @@
     "case": "D"
   },
   {
-    "verb": "Anfangen",
-    "preposition": "mit",
-    "case": "D"
-  },
-  {
     "verb": "sich änstigen",
     "preposition": "vor",
     "case": "D"
@@ -72,11 +57,6 @@
   {
     "verb": "anpassen",
     "preposition": "an",
-    "case": "A"
-  },
-  {
-    "verb": "Ankommen",
-    "preposition": "Auf",
     "case": "A"
   },
   {
