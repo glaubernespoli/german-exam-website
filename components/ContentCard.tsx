@@ -14,7 +14,7 @@ import ResultContainer from "./container/ResultContainer";
 const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
   const address = `/api/verb`;
   const fetcher = async (url: string) => await axios.get(url).then((res) => res.data);
-  const { data: verb, error } = useSWR<Verb>(address, fetcher, { revalidateOnFocus: false });
+  const { data: verb, error, mutate } = useSWR<Verb>(address, fetcher, { revalidateOnFocus: false });
   const [preposition, setPreposition] = useState<string>();
   const [xCase, setCase] = useState<Case>();
 
@@ -41,6 +41,13 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
       });
   };
 
+  const resetHandler = (_event: SyntheticEvent) => {
+    setResult(undefined);
+    setCase(undefined);
+    setPreposition(undefined);
+    mutate();
+  };
+
   const buttonDisabled: boolean = !xCase || !preposition;
   return (
     <div className="max-w-6xl px-3 pt-12 pb-24 mx-auto fsac4 md:px-1">
@@ -50,7 +57,7 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
           <PrepositionsContainer prepositionList={prepositions} setPreposition={setPreposition} />
           <CasesContainer caseList={cases} setCase={setCase} />
           {!result && <ButtonsContainer disabled={buttonDisabled} />}
-          {result && <ResultContainer result={result} />}
+          {result && <ResultContainer result={result} resetHandler={resetHandler} />}
         </form>
       </div>
     </div>
