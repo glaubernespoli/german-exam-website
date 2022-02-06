@@ -12,9 +12,7 @@ const verbsRepo = {
   getPrepositions: async () => prepositions.sort(),
   getCases: async () => typedCases,
   getCaseFrom: async (caseValue: string) => typedCases.find((xCase) => xCase.symbol === caseValue),
-  validateVerb: async (verb: Verb | undefined, preposition: string | undefined, xCase: Case | undefined) => {
-    console.log(`verb: ${verb}, prep: ${preposition}, case: ${xCase}`);
-  },
+  validateVerb: async (verb: Verb | undefined, preposition: string | undefined, xCase: Case | undefined) => {},
 };
 
 export default verbsRepo;

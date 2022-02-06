@@ -14,7 +14,7 @@ const OptionsContainer = ({ data, group, handler }: OptionProps) => {
     <div className="flex items-center justify-center m-10">
       <div className="bg-gray-900 rounded-lg">
         {data.map((item) => (
-          <div key={item.id} className="inline-flex rounded-lg hover:bg-green-900">
+          <div key={item.id} className="inline-flex transition duration-300 ease-linear rounded-lg hover:bg-green-900">
             <input type="radio" name={group} id={item.id} value={item.id} hidden onChange={handler} />
             <label
               htmlFor={item.id}
