@@ -9,15 +9,15 @@ const Home = ({ prepositions, cases }: ContentCardProps) => {
   return (
     <div className="text-black bg-black">
       <NextSeo
-        title="Home: nine4"
-        description="Welcome to nine4 homepage."
-        canonical="https://nine4-3.vercel.app/"
+        title="Worten Mit Präpositionen"
+        description="Connecting words with their right prepositions."
+        canonical="https://worten-mit-praepositionen.vercel.app/"
         openGraph={{
-          url: "https://nine4-3.vercel.app/",
+          url: "https://worten-mit-praepositionen.vercel.app/",
         }}
       />
       <Head>
-        <title>nine4</title>
+        <title>Worten Mit Präpositionen</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Main prepositions={prepositions} cases={cases} />
