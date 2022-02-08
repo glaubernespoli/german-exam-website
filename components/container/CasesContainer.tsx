@@ -1,23 +1,30 @@
-import { ChangeEvent, Dispatch, SetStateAction } from "react";
+import { ChangeEvent } from "react";
 import verbsRepo from "../../helpers/verbs-repo";
+import Answer from "../../types/answer";
 import Case from "../../types/case";
 import OptionsContainer from "./OptionsContainer";
 
 type CasesProps = {
   caseList: Case[];
-  xCase: Case | undefined;
-  setCase: Dispatch<SetStateAction<Case | undefined>>;
+  answer: Answer;
+  handleAnswer: Function;
 };
 
-const CasesContainer = ({ caseList, xCase, setCase }: CasesProps) => {
-  const handler = async (e: ChangeEvent<HTMLInputElement>) => setCase(await verbsRepo.getCaseFrom(e.target.value));
+const CasesContainer = ({ caseList, answer, handleAnswer }: CasesProps) => {
+  const handler = async (e: ChangeEvent<HTMLInputElement>) => {
+    const xCase = await verbsRepo.getCaseFrom(e.target.value);
+    handleAnswer({
+      ...answer,
+      case: xCase,
+    });
+  };
   return (
     <OptionsContainer
       data={caseList.map((value) => {
         return { id: value.symbol, text: value.name };
       })}
       group="cases"
-      selected={xCase?.symbol}
+      selected={answer.case?.symbol}
       handler={handler}
     />
   );

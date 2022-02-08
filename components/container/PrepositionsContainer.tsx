@@ -1,21 +1,27 @@
-import { ChangeEvent, Dispatch, SetStateAction } from "react";
+import { ChangeEvent } from "react";
+import Answer from "../../types/answer";
 import OptionsContainer from "./OptionsContainer";
 
 type PrepositionsProps = {
   prepositionList: string[];
-  preposition: string | undefined;
-  setPreposition: Dispatch<SetStateAction<string | undefined>>;
+  answer: Answer;
+  handleAnswer: Function;
 };
 
-const PrepositionsContainer = ({ prepositionList, preposition, setPreposition }: PrepositionsProps) => {
-  const handler = (e: ChangeEvent<HTMLInputElement>) => setPreposition(e.target.value);
+const PrepositionsContainer = ({ prepositionList, answer, handleAnswer }: PrepositionsProps) => {
+  const handler = (e: ChangeEvent<HTMLInputElement>) => {
+    handleAnswer({
+      ...answer,
+      preposition: e.target.value,
+    });
+  };
   return (
     <OptionsContainer
       data={prepositionList.map((value) => {
         return { id: value, text: value };
       })}
       group="prepositions"
-      selected={preposition}
+      selected={answer.preposition}
       handler={handler}
     />
   );

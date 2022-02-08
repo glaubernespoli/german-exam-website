@@ -2,21 +2,28 @@ import axios from "axios";
 import { SyntheticEvent, useState } from "react";
 import useSWR from "swr";
 import verbsRepo from "../helpers/verbs-repo";
-import Case from "../types/case";
+import Answer from "../types/answer";
 import ContentCardProps from "../types/contentCard";
 import Result from "../types/result";
 import Verb from "../types/verb";
+import AnswerContainer from "./container/AnswerContainer";
 import ButtonsContainer from "./container/ButtonsContainer";
-import CasesContainer from "./container/CasesContainer";
-import PrepositionsContainer from "./container/PrepositionsContainer";
 import ResultContainer from "./container/ResultContainer";
 
 const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
   const address = `/api/verb`;
   const fetcher = async (url: string) => await axios.get(url).then((res) => res.data);
   const { data: verb, error, mutate } = useSWR<Verb>(address, fetcher, { revalidateOnFocus: false });
-  const [preposition, setPreposition] = useState<string>();
-  const [xCase, setCase] = useState<Case>();
+
+  const initAnswers = () => {
+    const answers: Answer[] = [];
+    answers.push({
+      case: undefined,
+      preposition: undefined,
+    });
+    return answers;
+  };
+  const [answers, setAnswers] = useState<Answer[]>(initAnswers());
 
   const [result, setResult] = useState<Result>();
 
@@ -26,7 +33,7 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
   const doSubmit = (event: SyntheticEvent) => {
     event.preventDefault();
     verbsRepo
-      .validateVerb(verb, preposition, xCase)
+      .validateVerb(verb, answers)
       .then((result) => {
         setResult({
           resultMessage: result,
@@ -43,23 +50,25 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
 
   const resetHandler = (_event: SyntheticEvent) => {
     setResult(undefined);
-    setCase(undefined);
-    setPreposition(undefined);
+    setAnswers(initAnswers());
     mutate();
   };
 
-  const buttonDisabled: boolean = !xCase || !preposition;
+  const buttonDisabled: boolean = !answers.every((answer) => answer.case && answer.preposition);
   return (
     <div className="max-w-6xl px-3 pt-12 pb-24 mx-auto fsac4 md:px-1">
       <div className="ktq4">
         <form onSubmit={doSubmit}>
           <h2 className="pt-4 text-6xl font-bold text-center text-white capitalize">{verb?.verb}</h2>
-          <PrepositionsContainer
-            prepositionList={prepositions}
-            preposition={preposition}
-            setPreposition={setPreposition}
+
+          <AnswerContainer
+            answers={answers}
+            handleAnswer={setAnswers}
+            prepositions={prepositions}
+            cases={cases}
+            index={0}
           />
-          <CasesContainer caseList={cases} xCase={xCase} setCase={setCase} />
+
           {!result && <ButtonsContainer disabled={buttonDisabled} />}
           {result && <ResultContainer result={result} resetHandler={resetHandler} />}
         </form>

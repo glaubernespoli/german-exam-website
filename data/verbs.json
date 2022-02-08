@@ -15,12 +15,12 @@
     "case": "D"
   },
   {
-    "verb": "Ankommen",
+    "verb": "Ankommen (depender)",
     "preposition": "Auf",
     "case": "A"
   },
   {
-    "verb": "Abhalten",
+    "verb": "Abhalten (impedir)",
     "preposition": "von",
     "case": "D"
   },
@@ -30,7 +30,7 @@
     "case": "D"
   },
   {
-    "verb": "Abraten",
+    "verb": "Abraten (desaconsejar)",
     "preposition": "Von",
     "case": "D"
   },
@@ -86,8 +86,16 @@
   },
   {
     "verb": "sich bedanken",
-    "preposition": "für",
-    "case": "A"
+    "cases": [
+      {
+        "preposition": "gegen",
+        "case": "A"
+      },
+      {
+        "preposition": "mit",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "sich befassen",
@@ -181,8 +189,16 @@
   },
   {
     "verb": "sich eignen",
-    "preposition": "für",
-    "case": "A"
+    "cases": [
+      {
+        "preposition": "für",
+        "case": "A"
+      },
+      {
+        "preposition": "zu",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "eingehen",
@@ -206,8 +222,16 @@
   },
   {
     "verb": "sich entscheiden",
-    "preposition": "für",
-    "case": "A"
+    "cases": [
+      {
+        "preposition": "gegen",
+        "case": "A"
+      },
+      {
+        "preposition": "für",
+        "case": "A"
+      }
+    ]
   },
   {
     "verb": "sich Entschliessen",
@@ -256,8 +280,16 @@
   },
   {
     "verb": "sich erkundigen",
-    "preposition": "bei",
-    "case": "D"
+    "cases": [
+      {
+        "preposition": "bei",
+        "case": "D"
+      },
+      {
+        "preposition": "nach",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "das Erstaunen",
@@ -271,8 +303,16 @@
   },
   {
     "verb": "die Erwartung",
-    "preposition": "an",
-    "case": "A"
+    "cases": [
+      {
+        "preposition": "an",
+        "case": "A"
+      },
+      {
+        "preposition": "bei",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "die Fähigkeit",
@@ -391,8 +431,16 @@
   },
   {
     "verb": "leiden",
-    "preposition": "an",
-    "case": "D"
+    "cases": [
+      {
+        "preposition": "an",
+        "case": "D"
+      },
+      {
+        "preposition": "unter",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "die Liebe",
@@ -426,8 +474,16 @@
   },
   {
     "verb": "die Offenheit (la franqueza)",
-    "preposition": "gegenüber",
-    "case": "D"
+    "cases": [
+      {
+        "preposition": "gegenüber",
+        "case": "D"
+      },
+      {
+        "preposition": "für",
+        "case": "A"
+      }
+    ]
   },
   {
     "verb": "der Nutzen",
@@ -522,6 +578,189 @@
   {
     "verb": "die Suche",
     "preposition": "nach",
+    "case": "D"
+  },
+  {
+    "verb": "teilnehmen",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "tendieren",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "trauern",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "träumen",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "sich trennen",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "treffen",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "typish",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "überreden (persuadir)",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "sich überzeugen",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "umgehen (tratar)",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "die Verantwortung",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "die Verbindung",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "vergleichen",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "tauschen",
+    "cases": [
+      {
+        "preposition": "gegen",
+        "case": "A"
+      },
+      {
+        "preposition": "mit",
+        "case": "D"
+      }
+    ]
+  },
+  {
+    "verb": "verlangen (esperar)",
+    "preposition": "von",
+    "case": "D"
+  },
+  {
+    "verb": "sich verlassen",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "sich verlieben",
+    "preposition": "in",
+    "case": "A"
+  },
+  {
+    "verb": "verpflichten (obligarse)",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "sich verstecken",
+    "preposition": "vor",
+    "case": "D"
+  },
+  {
+    "verb": "vertrauen",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "vertraut",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "der Verweis (aviso)",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "der Verzicht (renuncia, abstinencia)",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "sich vorbereiten",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "warnen",
+    "preposition": "vor",
+    "case": "D"
+  },
+  {
+    "verb": "warten",
+    "preposition": "Auf",
+    "case": "A"
+  },
+  {
+    "verb": "Wichtigkeit",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "Wirkung",
+    "preposition": "auf",
+    "case": "A"
+  },
+  {
+    "verb": "die Wut",
+    "preposition": "für",
+    "case": "A"
+  },
+  {
+    "verb": "Verwunderung",
+    "preposition": "über",
+    "case": "A"
+  },
+  {
+    "verb": "zählen",
+    "preposition": "zu",
+    "case": "D"
+  },
+  {
+    "verb": "Zufriedenheit",
+    "preposition": "mit",
+    "case": "D"
+  },
+  {
+    "verb": "die Zurückhaltung (mesura)",
+    "preposition": "gegenüber",
+    "case": "D"
+  },
+  {
+    "verb": "die Zweifel",
+    "preposition": "an",
+    "case": "D"
+  },
+  {
+    "verb": "der Zwang",
+    "preposition": "zu",
     "case": "D"
   }
 ]
