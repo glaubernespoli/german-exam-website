@@ -6,6 +6,7 @@ import Answer from "../types/answer";
 import ContentCardProps from "../types/contentCard";
 import Result from "../types/result";
 import Verb from "../types/verb";
+import AddButtonContainer from "./container/AddButtonContainer";
 import AnswerContainer from "./container/AnswerContainer";
 import ButtonsContainer from "./container/ButtonsContainer";
 import ResultContainer from "./container/ResultContainer";
@@ -23,9 +24,12 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
     });
     return answers;
   };
+
   const [answers, setAnswers] = useState<Answer[]>(initAnswers());
 
   const [result, setResult] = useState<Result>();
+
+  const [doubleCase, setDoubleCase] = useState(false);
 
   if (error) <p>Loading failed...</p>;
   if (!verb) <h1>Loading...</h1>;
@@ -51,7 +55,25 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
   const resetHandler = (_event: SyntheticEvent) => {
     setResult(undefined);
     setAnswers(initAnswers());
+    setDoubleCase(false);
     mutate();
+  };
+
+  const newAnswerRowHandler = (_event: SyntheticEvent) => {
+    if (!doubleCase) {
+      setAnswers((prevState) => {
+        const curr = Array.from(prevState);
+        curr.push(...initAnswers());
+        return curr;
+      });
+    } else {
+      setAnswers((prevState) => {
+        const curr = Array.from(prevState);
+        curr.pop();
+        return curr;
+      });
+    }
+    setDoubleCase((prevState) => !prevState);
   };
 
   const buttonDisabled: boolean = !answers.every((answer) => answer.case && answer.preposition);
@@ -69,8 +91,24 @@ const ContentCard = ({ prepositions, cases }: ContentCardProps) => {
             index={0}
           />
 
-          {!result && <ButtonsContainer disabled={buttonDisabled} />}
-          {result && <ResultContainer result={result} resetHandler={resetHandler} />}
+          {doubleCase ? (
+            <AnswerContainer
+              answers={answers}
+              handleAnswer={setAnswers}
+              prepositions={prepositions}
+              cases={cases}
+              index={1}
+              clickHandler={newAnswerRowHandler}
+            />
+          ) : (
+            <AddButtonContainer clickHandler={newAnswerRowHandler} />
+          )}
+
+          {result ? (
+            <ResultContainer result={result} resetHandler={resetHandler} />
+          ) : (
+            <ButtonsContainer disabled={buttonDisabled} />
+          )}
         </form>
       </div>
     </div>
