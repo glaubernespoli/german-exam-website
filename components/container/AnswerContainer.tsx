@@ -28,8 +28,9 @@ const AnswerContainer = ({ answers, handleAnswer, prepositions, cases, index }: 
         prepositionList={prepositions}
         answer={answers[index]}
         handleAnswer={handleUpdateSingleValue}
+        index={index}
       />
-      <CasesContainer caseList={cases} answer={answers[index]} handleAnswer={handleUpdateSingleValue} />
+      <CasesContainer caseList={cases} answer={answers[index]} handleAnswer={handleUpdateSingleValue} index={index} />
     </>
   );
 };

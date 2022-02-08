@@ -6,9 +6,10 @@ type PrepositionsProps = {
   prepositionList: string[];
   answer: Answer;
   handleAnswer: Function;
+  index: 0 | 1;
 };
 
-const PrepositionsContainer = ({ prepositionList, answer, handleAnswer }: PrepositionsProps) => {
+const PrepositionsContainer = ({ prepositionList, answer, handleAnswer, index }: PrepositionsProps) => {
   const handler = (e: ChangeEvent<HTMLInputElement>) => {
     handleAnswer({
       ...answer,
@@ -21,6 +22,7 @@ const PrepositionsContainer = ({ prepositionList, answer, handleAnswer }: Prepos
         return { id: value, text: value };
       })}
       group="prepositions"
+      index={index}
       selected={answer.preposition}
       handler={handler}
     />

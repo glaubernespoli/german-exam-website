@@ -8,9 +8,10 @@ type CasesProps = {
   caseList: Case[];
   answer: Answer;
   handleAnswer: Function;
+  index: 0 | 1;
 };
 
-const CasesContainer = ({ caseList, answer, handleAnswer }: CasesProps) => {
+const CasesContainer = ({ caseList, answer, handleAnswer, index }: CasesProps) => {
   const handler = async (e: ChangeEvent<HTMLInputElement>) => {
     const xCase = await verbsRepo.getCaseFrom(e.target.value);
     handleAnswer({
@@ -24,6 +25,7 @@ const CasesContainer = ({ caseList, answer, handleAnswer }: CasesProps) => {
         return { id: value.symbol, text: value.name };
       })}
       group="cases"
+      index={index}
       selected={answer.case?.symbol}
       handler={handler}
     />
