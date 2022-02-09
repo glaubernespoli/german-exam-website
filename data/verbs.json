@@ -148,7 +148,16 @@
   {
     "verb": "berichten",
     "preposition": "über",
-    "case": "A"
+    "cases": [
+      {
+        "preposition": "über",
+        "case": "A"
+      },
+      {
+        "preposition": "von",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "die Berühmheit",
@@ -730,7 +739,7 @@
   },
   {
     "verb": "die Wut",
-    "preposition": "für",
+    "preposition": "auf",
     "case": "A"
   },
   {
