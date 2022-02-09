@@ -94,19 +94,27 @@
   },
   {
     "verb": "sich austauschen",
-    "preposition": "Mit",
-    "case": "D"
-  },
-  {
-    "verb": "sich bedanken",
     "cases": [
       {
-        "preposition": "gegen",
+        "preposition": "über",
         "case": "A"
       },
       {
         "preposition": "mit",
         "case": "D"
+      }
+    ]
+  },
+  {
+    "verb": "sich bedanken",
+    "cases": [
+      {
+        "preposition": "bei",
+        "case": "D"
+      },
+      {
+        "preposition": "für",
+        "case": "A"
       }
     ]
   },
@@ -147,7 +155,6 @@
   },
   {
     "verb": "berichten",
-    "preposition": "über",
     "cases": [
       {
         "preposition": "über",
@@ -171,8 +178,16 @@
   },
   {
     "verb": "sich beschwerden",
-    "preposition": "über",
-    "case": "A"
+     "cases": [
+      {
+        "preposition": "über",
+        "case": "A"
+      },
+      {
+        "preposition": "bei",
+        "case": "D"
+      }
+    ]  
   },
   {
     "verb": "bestehen",
@@ -186,8 +201,16 @@
   },
   {
     "verb": "sich bewerben",
-    "preposition": "um",
-    "case": "A"
+     "cases": [
+      {
+        "preposition": "um",
+        "case": "A"
+      },
+      {
+        "preposition": "bei",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "Bezeichnung",
@@ -195,7 +218,7 @@
     "case": "A"
   },
   {
-    "verb": "beziehen",
+    "verb": "sich beziehen",
     "preposition": "Auf",
     "case": "A"
   },
@@ -223,7 +246,7 @@
     ]
   },
   {
-    "verb": "eingehen",
+    "verb": "eingehen (ocuparse)",
     "preposition": "auf",
     "case": "A"
   },
@@ -262,8 +285,16 @@
   },
   {
     "verb": "sich entschuldigen",
-    "preposition": "für",
-    "case": "A"
+    "cases": [
+      {
+        "preposition": "für",
+        "case": "A"
+      },
+      {
+        "preposition": "bei",
+        "case": "D"
+      }
+    ]
   },
   {
     "verb": "das Entsetzen (espanto)",
@@ -271,7 +302,7 @@
     "case": "A"
   },
   {
-    "verb": "Entäuschung",
+    "verb": "Enttäuschung",
     "preposition": "über",
     "case": "A"
   },
@@ -372,12 +403,12 @@
     "case": "A"
   },
   {
-    "verb": "sich halten (estimar)",
+    "verb": "(sich) halten (estimar)",
     "preposition": "für",
     "case": "A"
   },
   {
-    "verb": "halten",
+    "verb": "halten (retener)",
     "preposition": "von",
     "case": "D"
   },
@@ -402,7 +433,7 @@
     "case": "D"
   },
   {
-    "verb": "hinweisen",
+    "verb": "hinweisen (CONSTAR)",
     "preposition": "auf",
     "case": "A"
   },
