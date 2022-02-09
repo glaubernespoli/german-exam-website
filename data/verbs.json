@@ -1,5 +1,18 @@
 [
   {
+    "verb": "tauschen",
+    "cases": [
+      {
+        "preposition": "gegen",
+        "case": "A"
+      },
+      {
+        "preposition": "mit",
+        "case": "D"
+      }
+    ]
+  },
+  {
     "verb": "Abhängen",
     "preposition": "Von",
     "case": "D"
@@ -644,19 +657,6 @@
     "verb": "vergleichen",
     "preposition": "mit",
     "case": "D"
-  },
-  {
-    "verb": "tauschen",
-    "cases": [
-      {
-        "preposition": "gegen",
-        "case": "A"
-      },
-      {
-        "preposition": "mit",
-        "case": "D"
-      }
-    ]
   },
   {
     "verb": "verlangen (esperar)",
